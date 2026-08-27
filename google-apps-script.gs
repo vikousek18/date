@@ -9,7 +9,7 @@
   5. Copy the /exec URL into config.js.
 */
 
-const YOUR_EMAIL = "YOUR_EMAIL_HERE";
+const YOUR_EMAIL = "duyanh0981@gmail.com";
 
 function doPost(e) {
   try {
