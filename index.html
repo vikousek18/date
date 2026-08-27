@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Ivanka 💗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="floating-hearts" aria-hidden="true"></div>
+
+  <main id="app">
+    <section class="screen active" id="home">
+      <div class="card">
+        <div class="cat">🐱</div>
+        <div class="sparkles">✦ ˚｡⋆ ♡ ⋆｡˚ ✦</div>
+        <p class="tiny">A very important question...</p>
+        <h1>Ivanka,<br><span>would you like to have a date with me?</span> 💗</h1>
+        <div class="buttons">
+          <button class="yes-btn" id="yesBtn">Yes 💕</button>
+          <button class="no-btn" id="noBtn">No 🙈</button>
+        </div>
+        <p class="hint">Choose wisely hehe...</p>
+      </div>
+    </section>
+
+    <section class="screen" id="types">
+      <div class="card wide">
+        <div class="cat">🥹💗</div>
+        <h2>Hihihi okiiii<br><span>I love youuuuu 💕</span></h2>
+        <p class="subtitle">Choose your type of date ✨</p>
+
+        <div class="date-grid">
+          <button class="date-card" data-type="Apartment">
+            <div class="date-image">🏠</div>
+            <strong>Apartment</strong>
+            <small>Cozy time together</small>
+          </button>
+          <button class="date-card" data-type="Pedal boat">
+            <div class="date-image">🦆</div>
+            <strong>Đạp vịt</strong>
+            <small>Quack quack date 🦆</small>
+          </button>
+          <button class="date-card" data-type="Chicken">
+            <div class="date-image">🍗</div>
+            <strong>Ăn gà</strong>
+            <small>Chicken date hehe</small>
+          </button>
+          <button class="date-card" data-type="Restaurant">
+            <div class="date-image">🍽️</div>
+            <strong>Ăn nhà hàng</strong>
+            <small>I'll choose the place 🤭</small>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="calendar">
+      <div class="card">
+        <div class="cat">📅🐱</div>
+        <p class="tiny">One more little thing...</p>
+        <h2>When should we go? 💗</h2>
+        <p id="selectedType" class="selected-type"></p>
+
+        <div class="calendar-wrap">
+          <label for="date">Pick a date</label>
+          <input id="date" type="date">
+          <label for="time">And a time</label>
+          <input id="time" type="time" value="18:00">
+        </div>
+
+        <button class="continue-btn" id="confirmBtn">This one! 💕</button>
+        <p class="error" id="dateError"></p>
+      </div>
+    </section>
+
+    <section class="screen" id="final">
+      <div class="card final-card">
+        <div class="big-heart">💗</div>
+        <h1>Thank youuuu,<br><span>I love youuuuuuu 💕</span></h1>
+        <p class="final-message">Our date is officially a thing now hehe.</p>
+        <div class="choice-summary" id="summary"></div>
+
+        <div class="photo-wall" id="photoWall">
+          <!-- Add your photos as assets/photo1.jpg, photo2.jpg, ... -->
+        </div>
+
+        <p class="forever">♡ made with love for Ivanka ♡</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
