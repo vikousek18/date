@@ -123,3 +123,15 @@ async function sendChoice(data) {
 }
 
 buildPhotoWall();
+// Tự động phát nhạc nền khi người dùng tương tác với trang web
+const bgMusic = document.getElementById('bgMusic');
+
+function playMusic() {
+  if (bgMusic && bgMusic.paused) {
+    bgMusic.play().catch(error => console.log("Chưa thể phát nhạc:", error));
+  }
+}
+
+// Phát nhạc ngay khi nhấp chuột hoặc chạm vào màn hình lần đầu tiên
+document.addEventListener('click', playMusic, { once: true });
+document.addEventListener('touchstart', playMusic, { once: true });
