@@ -77,14 +77,31 @@ confirmBtn.addEventListener('click', async () => {
 
 function buildPhotoWall() {
   photoWall.innerHTML = "";
-  for (let i = 1; i <= 20; i++) {
-    const img = document.createElement('img');
-    img.src = `assets/photo${i}.jpg`;
-    img.alt = `Our memory ${i}`;
-    img.loading = 'lazy';
-    img.onerror = () => img.remove();
+
+  const photos = [
+    "photo1.png",
+    "photo2.jpeg"
+    "photo3.jpg",
+    "photo5.jpg",
+    "photo7.jpg",
+    "photo4.jpeg",
+    "photo6.jpeg"
+  ];
+
+  photos.forEach((photo, index) => {
+    const img = document.createElement("img");
+
+    img.src = photo;
+    img.alt = `Our memory ${index + 1}`;
+    img.loading = "lazy";
+
+    img.onerror = () => {
+      console.log("Cannot load:", photo);
+      img.remove();
+    };
+
     photoWall.appendChild(img);
-  }
+  });
 }
 
 async function sendChoice(data) {
