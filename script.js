@@ -80,7 +80,7 @@ function buildPhotoWall() {
 
   const photos = [
     "photo1.png",
-    "photo2.jpeg"
+    "photo2.jpeg",
     "photo3.jpg",
     "photo5.jpg",
     "photo7.jpg",
